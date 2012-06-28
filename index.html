@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elements Framwork</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/forms.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/global.js"></script>
+	<style>
+		body { font: 13px/18px helvetica, arial, sans-serif; margin: 0; }
+
+		code, pre { background: #eee; border: solid 1px #ddd; width: 100%; display: block; padding: 7px 10px; box-sizing: border-box; margin: 0 0 80px; }
+
+		.clear { clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+		.clearfix:before, .clearfix:after { content: '.'; display: block; overflow: hidden; visibility: hidden; font-size: 0; line-height: 0; width: 0; height: 0; }
+		.clearfix:after { clear: both; }
+		.clearfix { zoom: 1; }
+
+		.container { margin: 20px 20px 0; }
+		.checkbox, .radio, .select, .textbox, .submit { margin-bottom: 10px; }
+		.select { float: left; }
+
+		.mb10 { margin-bottom: 10px; }
+	</style>
+</head>
+<body class="clearfix">
+
+	<div class="container">
+		<h2>Checkboxes</h2>
+		<div class="checkbox">
+			<input type="checkbox" id="products" name="products">
+			<label for="products">Products</label>
+		</div>
+		<div class="checkbox">
+			<input type="checkbox" id="cheeses" name="cheeses" checked>
+			<label for="cheeses">Cheeses</label>
+		</div>
+		<div class="checkbox">
+			<input type="checkbox" id="shoes" name="shoes">
+			<label for="shoes">Shoes</label>
+		</div>
+
+		<pre>&lt;div class=&quot;checkbox&quot;&gt;
+	&lt;input type=&quot;checkbox&quot; id=&quot;products&quot; name=&quot;products&quot;&gt;
+	&lt;label for=&quot;products&quot;&gt;Products&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;checkbox&quot;&gt;
+	&lt;input type=&quot;checkbox&quot; id=&quot;cheeses&quot; name=&quot;cheeses&quot; checked&gt;
+	&lt;label for=&quot;cheeses&quot;&gt;Cheeses&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;checkbox&quot;&gt;
+	&lt;input type=&quot;checkbox&quot; id=&quot;shoes&quot; name=&quot;shoes&quot;&gt;
+	&lt;label for=&quot;shoes&quot;&gt;Shoes&lt;/label&gt;
+&lt;/div&gt;</pre>
+	</div>
+
+	<div class="container">
+		<h2>Radio Buttons</h2>
+		<div class="radio">
+			<input type="radio" id="fruits" name="options">
+			<label for="fruits">Fruits</label>
+		</div>
+		<div class="radio">
+			<input type="radio" id="vegetables" name="options" checked>
+			<label for="vegetables" class="test">Vegetables</label>
+		</div>
+		<div class="radio">
+			<input type="radio" id="neither" name="options">
+			<label for="neither">Neither</label>
+		</div>
+
+		<pre>&lt;div class=&quot;radio&quot;&gt;
+	&lt;input type=&quot;radio&quot; id=&quot;fruits&quot; name=&quot;options&quot;&gt;
+	&lt;label for=&quot;fruits&quot;&gt;Fruits&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;radio&quot;&gt;
+	&lt;input type=&quot;radio&quot; id=&quot;vegetables&quot; name=&quot;options&quot; checked&gt;
+	&lt;label for=&quot;vegetables&quot; class=&quot;test&quot;&gt;Vegetables&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;radio&quot;&gt;
+	&lt;input type=&quot;radio&quot; id=&quot;neither&quot; name=&quot;options&quot;&gt;
+	&lt;label for=&quot;neither&quot;&gt;Neither&lt;/label&gt;
+&lt;/div&gt;</pre>
+	</div>
+
+	<div class="container clearfix">
+		<h2>Select Boxes</h2>
+		<div class="select">
+			<select name="" id="">
+				<option value="">Choose a Meat</option>
+				<option value="">Beef</option>
+				<option value="">Chicken</option>
+				<option value="">Pork</option>
+			</select>
+			<span class="place"></span>
+		</div>
+
+		<div class="clear"></div>
+
+		<pre>&lt;div class=&quot;select&quot;&gt;
+	&lt;select name=&quot;&quot; id=&quot;&quot;&gt;
+		&lt;option value=&quot;&quot;&gt;Choose a Meat&lt;/option&gt;
+		&lt;option value=&quot;&quot;&gt;Beef&lt;/option&gt;
+		&lt;option value=&quot;&quot;&gt;Chicken&lt;/option&gt;
+		&lt;option value=&quot;&quot;&gt;Pork&lt;/option&gt;
+	&lt;/select&gt;
+	&lt;span class=&quot;place&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;</pre>
+	</div>
+
+	<div class="container">
+		<h2>Text Boxes</h2>
+		<div class="textbox">
+			<input type="text" id="textbox" name="textbox" placeholder="Type something...">
+		</div>
+
+		<pre>&lt;div class=&quot;textbox&quot;&gt;
+	&lt;input type=&quot;text&quot; id=&quot;textbox&quot; name=&quot;textbox&quot; placeholder=&quot;Type something...&quot;&gt;
+&lt;/div&gt;</pre>
+	</div>
+
+	<div class="container">
+		<h2>Submit Buttons</h2>
+		<div class="submit">
+			<input type="submit" id="submit" name="submit" value="Submit">
+		</div>
+
+		<pre>&lt;div class=&quot;submit&quot;&gt;
+	&lt;input type=&quot;submit&quot; id=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+&lt;/div&gt;</pre>
+		
+		<div class="submit">
+			<button id="" name="" value="">Submit</button>
+		</div>
+
+		<pre>&lt;div class=&quot;submit&quot;&gt;
+	&lt;button id=&quot;&quot; name=&quot;&quot; value=&quot;&quot;&gt;Submit&lt;/button&gt;
+&lt;/div&gt;</pre>
+	</div>
+
+</body>
+</html>
